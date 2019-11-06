@@ -1,0 +1,424 @@
+.profile-user {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #19224d;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  .banner {
+    width: 100%;
+    height: 250px;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    background: #19224d;
+    position: relative;
+    .banner-content {
+      position: absolute;
+      top: 112%;
+      width: 80%;
+      left: 50%;
+      padding-right:25px;
+      transform: translate(-50%, -90%);
+      .avatar {
+        width: 170px;
+        background: white;
+        height: 170px;
+        border: 3px solid #19224d;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 99%;
+          height: 99%;
+          border-radius: 50%;
+          border: 2px solid white;
+        }
+      }
+      .user-mess {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .username {
+          font-weight: bold !important;
+          color: white !important;
+          font-size: 30px !important;
+        }
+        .icon {
+          background: #52beae;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          line-height: 30px;
+          text-align: center;
+          margin: 0 !important;
+          font-size: 12px !important;
+        }
+        .mess {
+          color: white !important;
+          display: inline-block;
+          cursor: pointer;
+          padding: 10px;
+          background: #ec5252;
+          position: relative;
+        }
+        .mess2 {
+          color: white !important;
+          display: inline-block;
+          cursor: pointer;
+          padding: 10px;
+          background: #ec5252;
+        }
+        .tinNhan {
+          position: absolute;
+          bottom: 60px;
+          left: -30px;
+          background: white;
+          width: 340px;
+          z-index: 100;
+          padding: 10px;
+        }
+        .arrowMess {
+          position: absolute;
+          bottom: 58px;
+          left: 0;
+          width: 35px;
+          height: 35px;
+          transform: rotate(45deg);
+          background: white;
+          border: 2px solid white;
+        }
+        textarea {
+          border: 1px solid #19224d;
+          color: #19224d;
+          height: 60px !important;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+  .tt {
+    color: #19224d;
+    .container-profile {
+      margin-top: 10px;
+      display: flex;
+      .left {
+        width: 33%;
+        margin-right: 1%;
+        margin-top: 35px;
+        .settingDasboard{
+          position: relative;
+          p{
+            cursor: pointer;
+          }
+         .arrow-tab{ 
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 10px;
+            height: 10px;
+            background: #19224d;
+            transform: translate(-50%,-50%) rotate(45deg) ; 
+          }
+        }
+        h5 {
+          background: #19224d;
+          color: white;
+          padding: 10px 10px;
+        }
+        ul {
+          li {
+            padding: 5px 0; 
+            img {
+              width: 70px;
+              height: 70px;
+            }
+          }
+        }
+      }
+      .right {
+        width: 65%;
+        h5 {
+          background: #19224d;
+          color: white;
+          padding: 10px 10px;
+        }
+        ul {
+          li {
+            border-bottom: 2px solid #19224d;
+            padding-bottom: 15px;
+            img {
+              width: 160px;
+              height: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .headerFb{ 
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    .left{
+      display: flex;
+      .avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height:100%;
+        }
+      }
+      .content{
+        margin-left:10px;
+        .name{
+          font-weight: bold;
+          color: #19224d;
+          font-size: 18px !important;
+        }
+        .date{
+          font-size:13px !important;
+        }
+      }
+    }
+    .right{
+      display: flex;
+      justify-content: flex-end;
+      i{
+        font-size: 25px;
+      }
+    }
+  }
+  .contentPost{
+    margin-top: 15px;
+    p{
+      margin-bottom: 15px;
+    }
+    .like{
+      width: 30px;
+      height:30px;
+      img{
+        width: 100%;
+        height:100%
+      }
+    }
+    .likeComment{
+      display: flex;
+      border-top: 1px solid rgba(201, 201, 201, 0.548);
+       padding: 5px;
+       padding-bottom: 0;
+      color: #19224d;
+      .method{
+        width: 50%;
+        display: flex;
+        justify-content: center; 
+        font-weight: bold; 
+        padding-top: 5px;
+        cursor: pointer;
+        align-items: center;
+        img{
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .comment{
+      .headerComment{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+        img{
+          width: 45px;
+          height: 45px;
+        }
+        textarea {  
+          border-top-left-radius: 35px;
+          border-bottom-left-radius: 35px; 
+          color: #19224d;
+          height: 40px !important;
+          background: rgba(128, 128, 128, 0.39);
+          margin-bottom: 0 !important;
+          position: relative;
+          padding-left: 15px;
+         
+        }
+        .imgSend{ 
+          border-top-right-radius: 35px;
+          border-bottom-right-radius: 35px;
+          cursor: pointer;
+          width: 55px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(128, 128, 128, 0.39);
+          transition:  all .5s;
+          img{
+            width: 50%;
+            height: 50%;
+            margin-left:-8px;
+          }
+          &:hover{
+            background: #4DB7ED;
+          }
+        }
+      }
+      .bodyComment{
+        .list{
+          li{
+            display: flex; 
+            border: none !important;
+            padding:5px !important;
+            margin:5px 0 !important;
+            justify-content: space-between;
+            align-items: center;
+            img{
+              width: 35px;
+              height: 35px;
+            }
+            .content{
+              background: rgba(128, 128, 128, 0.39) !important;
+              margin-left: 15px;
+              padding:5px 10px;
+              border-radius: 40px;  
+              &:hover .dropdownUp{
+                display: inline-block;
+              }
+              .dropdownUp{
+                display: none;
+              }
+              span{
+                font-weight: bold;
+                color: #19224d;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .listUserLike{ 
+    position: relative;
+    .listLike{
+      position: absolute;
+      bottom: 30px;
+      z-index: 3;
+      right: -30px; 
+      background: gray; 
+      z-index:1;
+      border-radius: 5px;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        background: gray;
+        width: 30px;
+        height: 30px;
+        transform: rotate(45deg);
+        z-index: -7;
+      }
+      ul{
+        padding: 10px; 
+        li{
+          color:white !important;
+          margin:  0 !important;
+          border-bottom: none !important;
+        }
+      }
+    } 
+    p{
+      width: 200px;
+      margin: 0 !important;
+    }
+  }
+  .chonAnh{
+    position: relative;
+    .tinNhan {
+      position: absolute;
+      bottom: 50px;
+      left: -30px;
+      background: white;
+      width: 340px;
+      z-index: 9;
+      padding: 10px;
+      border: 2px solid #19224d;
+    }
+    .arrowMess {
+      position: absolute;
+      bottom: 44px;
+      z-index: 10;
+      left: 10px;
+      width: 13px;
+      height: 13px;
+      transform: rotate(45deg);
+      background: white;
+      border-right: 2px solid #19224d;
+      border-bottom: 2px solid #19224d;
+    }
+    textarea {
+      border: 1px solid #19224d;
+      color: #19224d;
+      height: 60px !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  .chonVideo{
+    position: relative;
+    .tinNhan {
+      position: absolute;
+      bottom: 50px;
+      left: -30px;
+      background: white;
+      width: 340px;
+      z-index: 9;
+      padding: 10px;
+      border: 2px solid #19224d;
+    }
+    .arrowMess {
+      position: absolute;
+      bottom: 44px;
+      z-index: 10;
+      left: 10px;
+      width: 13px;
+      height: 13px;
+      transform: rotate(45deg);
+      background: white;
+      border-right: 2px solid #19224d;
+      border-bottom: 2px solid #19224d;
+    }
+    textarea {
+      border: 1px solid #19224d;
+      color: #19224d;
+      height: 60px !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  @media (min-width: 576px){
+    .modal-dialog {
+      max-width: 950px !important;
+      margin: 1.75rem auto; 
+    }
+  }
+  .modalAlbum{
+    .divItemImg{
+      width: 100%;
+      height:250px; 
+    }
+  } 
+}

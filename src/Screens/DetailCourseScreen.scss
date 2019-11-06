@@ -1,0 +1,365 @@
+.thong-tin-khoa-hoc {
+    font-family: "Lexend Exa", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .header-thong-tin-khoa-hoc {
+      padding: 15px 0;
+      .container-header {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          margin-bottom: 0;
+          font-size: 25px;
+          color: #19224D;
+          font-weight: 300;
+        }
+        .avatar-thong-bao {
+          display: flex;
+          align-items: center;
+          position: relative;
+          
+          .content{
+            position: absolute;
+            top: 110%;
+    right: 10px;
+            width: 360px;
+            background: white; 
+            padding: 15px;
+            border: 2px  solid #19224D;
+            border-top: 2px  solid #19224D;
+            z-index:35;
+            overflow-x: hidden;
+            height: 250px; 
+
+            p{
+              width: 326px; 
+              white-space: nowrap; 
+              overflow: hidden;
+              text-overflow: ellipsis; 
+              padding:10px 0;
+              border-bottom: 1px solid #000000;
+            }
+          }
+          .content2{
+            position: absolute;
+            top: 110%;
+    left: -140px;
+            width: 360px;
+            background: white; 
+            padding: 15px;
+            border: 2px  solid #19224D;
+            border-top: 2px  solid #19224D;
+            z-index: 15;
+            overflow-x: hidden;
+            height: 250px; 
+            p{
+              white-space: nowrap; 
+              width: 326px; 
+              overflow: hidden;
+              text-overflow: ellipsis; 
+              padding:10px 0;
+              border-bottom: 1px solid #000000;
+            }
+          }
+         
+          .thong-bao {
+            background: #19224D;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+          i {
+            font-size: 25px;
+          }
+          .avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .banner {
+      width: 100%;
+      height: 450px;
+      background: url("https://login.codepro.vn/Assets/admin/Controllers/Home/img/artsfon.com-83184.jpg") no-repeat;
+      background-position: center center;
+      background-size: cover;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.534);
+      }
+      .text-khoa-hoc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        text-align: center;
+        text-shadow: 1px 1px 15px white;
+        font-size: 21px;
+        letter-spacing: 2px;
+        color: white;
+        h3 {
+          font-size: 35px;
+        }
+        .start {
+          background: transparent;
+          color: white;
+          font-weight: bold;
+          border: 2px solid white;
+          margin-top: 10px;
+        }
+      }
+    }
+    .main {
+      .container {
+        .nav {
+          .nav-item {
+            cursor: pointer;
+            p {
+              border: none;
+              margin-bottom: 0;
+              &.active {
+                border-bottom: 2px solid #19224D;
+                color: #19224D;
+                font-weight: bold;
+              }
+            }
+            &:hover {
+              border-bottom: 2px solid #19224D;
+            }
+          }
+        }
+      }
+      .tab-content {
+        background: rgba(128, 128, 128, 0.185);
+        .row {
+          .col-md-12 {
+            h3 {
+              color: #19224D;
+              border-bottom: 2px solid #19224D;
+              // text-align: center;
+              padding: 10px 0;
+              // background: white;
+            }
+            .container-thong-bao-bai-tap{
+              color: #19224D; 
+              font-size: 24px; 
+              margin-top:10px;
+              padding: 15px 15px;
+              .bai-tap{
+                font-size: 16px;
+                display:flex;
+                justify-content: space-between;
+                width:100%;
+                .btn-nop-bai{
+                  outline: 1px solid #19224D;
+                  margin-top: 10px;
+                  transition: all .5s;
+                  border-radius: 0px !important;
+                  &:hover{
+                    background: #19224D;
+                    color: white;
+                  }
+                }
+              }
+              .item{ 
+                border-bottom: 1px solid #19224D;
+                cursor: pointer;
+                padding:10px;
+                transition: all .5s;  
+                &:hover{
+                  background: #19224D;
+                  color: white;
+                }
+                p{
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .danh-gia {
+              padding: 15px 0;
+              .col-md-5 {
+                form {
+                  color: #19224D;
+                  .form-group {
+                    label {
+                      font-weight: bold;
+                      font-size: 20px;
+                      margin-bottom: 2px !important;
+                    }
+                    input {
+                      color: #19224D;
+                      border: 1px solid #19224D;
+                      border-radius: unset;
+                    }
+                    textarea{
+                      color: #19224D;
+                      border: 1px solid #19224D;
+                      border-radius: unset;
+                    }
+                    select{
+                      
+                      border: 1px solid #19224D;
+                      border-radius: unset;
+                      color: #19224D; 
+                    }
+                  }
+                  button{
+                    width: 100%;
+                    background: #19224D;
+                    color: white;
+                    text-align:center;
+                  }
+                }
+              }
+              .col-md-7{
+                height: 441px;
+                overflow-x: hidden;  
+                .thong-tin-danh-gia{
+                  color: #19224D;
+                  margin-bottom: 15px;
+                  .username{
+                    font-weight: bold;
+                    font-size: 18px;
+                  }
+                  .email{
+                    font-size: 14px; 
+                  }
+                  .nhan-xet{
+                    background: #19224D;
+                    color: white !important;
+                    font-weight: bold;
+                    padding: 4px; 
+                    padding-left: 10px;
+                  }
+                }
+                
+              }
+  
+            }
+           
+            .noi-dung-khoa-hoc {
+              .col-md-12 {
+                ul { 
+                  margin-top: 10px;
+                  padding: 15px; 
+                  li {
+                    list-style: none;
+                    display: flex;
+                    color: #19224D;
+                    padding: 10px 10px;
+                    border-bottom: 1px solid #19224D;
+                    cursor: pointer;
+                    align-items: center;
+                    transition: all 0.5s;
+                    &:hover {
+                      color: white;
+                      background: #19224D;
+                    }
+                    &:hover .border-item {
+                      background: white;
+                      color: #19224D;
+                    }
+                    .border-item {
+                      width: 30px;
+                      height: 30px;
+                      line-height: 30px;
+                      text-align: center;
+                      border-radius: 50%;
+                      background: #19224D;
+                      color: white;
+                      margin-right: 10px;
+                      font-size: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .col-md-8 {
+            h3 {
+              color: #19224D;
+              border-bottom: 2px solid #19224D;
+              // text-align: center;
+              padding: 10px 0;
+              // background: white;
+            }
+            .item {
+              text-align: center; 
+              color: #19224D;
+              background: white;
+              display: flex;
+              align-items: center;
+              padding: 0 15px;
+              transition: all 0.5s;
+              cursor: pointer;
+              font-weight: bold;
+              &:hover {
+                background: #19224D;
+                color: white;
+              }
+              &:hover .border-item {
+                border: 2px solid white;
+              }
+              .border-item {
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                border-radius: 50%;
+                text-align: center;
+                border: 2px solid #19224D;
+                font-size: 35px;
+                margin-right: 10px;
+              }
+            }
+          }
+          .col-md-4 {
+            padding: 15px;  
+            .container1 {
+              .hinh-anh-khoa-hoc { 
+                img {
+                  width: 100%;
+                  height: 100%;
+                  display: block;
+                }
+              }
+              ul {
+                padding: 0;
+                // text-align: center;
+                margin-top: 10px;
+                font-size: 17px;
+                li {
+                  list-style: none;
+                  color: #19224D; 
+                  padding: 5px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    ::-webkit-scrollbar {width: 10px; height: 4px; background:white; }
+  ::-webkit-scrollbar-thumb { background-color: #19224D;}
+  }

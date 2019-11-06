@@ -1,0 +1,191 @@
+@import "../../node_modules/sweetalert/dist/sweetalert.css";
+
+.profile-index {
+  width: 100%;
+  font-family: "Lexend Exa", sans-serif;
+  .row {
+    width: 100%;
+    .col-md-3 {
+      padding: 0;
+      position: relative;
+      .logo {
+        padding: 20px 0;
+      }
+      .blue {
+        background: #1c3b68;
+        font-size: 30px !important;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        p {
+          margin-bottom: 0;
+          font-family: "Lexend Exa", sans-serif;
+          letter-spacing: 2px;
+        }
+      }
+  
+      .ion {
+        font-family: "Lexend Exa", sans-serif;
+        color: #1c3b68;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: -5px;
+      }
+      .academy {
+        color: white;
+        background: #ff4858;
+        /* 
+        padding: 0 10px 0 0;
+        font-weight: bold;    */
+      }
+      .profile-avatar {
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        h5 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 60px;
+          margin: 0;
+          color: white;
+          font-size: 25px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #19224d91;
+        }
+      }
+      .profile-setting {
+        background: rgb(255, 255, 255);
+        color: white;
+        .container-edit-profile {
+          width: 80%;
+          margin: 0 auto;
+          padding: 15px 0;
+          button {
+            width: 100%;
+            background: #19224d;
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .controller {
+          margin: 0 auto;
+          width: 90%;
+          .khoaHocCuaToi{
+            &:hover{
+              background: #0000FF;
+              color: white;
+            }
+          }
+          ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            li {
+              font-weight: bold;
+              padding: 10px 10px;
+              cursor: pointer;
+              &.khoaHocCuaToi{
+                color: #19224d;
+                transition:  all .5s;
+                &:hover{
+                  background: #19224d;
+                  color: white;
+                }
+              }
+              &.dangKyKhoaHoc{
+                color: #19224d;
+                transition:  all .5s;
+                &:hover{
+                  background: #19224d;
+                  color: white;
+                }
+              }
+              &.khoaHocChoXetDuyet{
+                color: #19224d;
+                transition:  all .5s;
+                &:hover{
+                  background: #19224d;
+                  color: white;
+                }
+              }
+              &.thoat{
+                color: #19224d;
+                transition:  all .5s;
+                &:hover{
+                  background: #19224d;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .col-md-9 {
+      padding: 0;
+      background: #19224d;
+      position: relative;
+      padding-top: 35px;
+      padding-bottom: 50px;
+      .search {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 7px;
+        overflow: hidden;
+        display: flex;
+        input {
+          width: 90%;
+          border: none;
+          padding: 10px 0;
+          padding-left: 30px;
+          &::placeholder {
+            font-weight: bold;
+          }
+          &:focus {
+            outline: none !important;
+          }
+        }
+        span {
+          background: gray;
+          padding: 10px;
+          color: white;
+          cursor: pointer;
+          font-weight: bold;
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+      }
+    }
+  }
+}
+.thanhTimKiem{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 7px;
+  background: white;
+}
+.table-list-user{
+  th{
+    color:white;
+  }
+  td{
+    color: white;
+  }
+}
+.container-huy-hieu{
+  width: 40%;
+  margin-left: 3rem;
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+}

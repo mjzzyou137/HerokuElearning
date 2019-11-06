@@ -1,0 +1,373 @@
+@import "../../node_modules/sweetalert/dist/sweetalert.css";
+.admin {
+  width: 100%;
+  display: flex;
+  font-family: "Lexend Exa", sans-serif;
+  .admin-left {
+    background: white;
+    width: 20%;
+    height: 100vh;
+    .navbar-nav {
+      .nav-item {
+        padding: 10px 25px;
+        cursor: pointer;
+        font-weight: bold;
+        .dashboard {
+          color: blue;
+        }
+        .course {
+          color: #f5365c;
+        }
+        .user {
+          color: rgb(156, 156, 1);
+        }
+        .map {
+          color: green;
+        }
+      }
+    }
+    .logo {
+      padding: 20px 0;
+    }
+    .blue {
+      background: #1c3b68;
+      font-size: 30px !important;
+      color: white;
+      font-weight: bold;
+      display: inline-block;
+      p {
+        margin-bottom: 0;
+        font-family: "Lexend Exa", sans-serif;
+        letter-spacing: 2px;
+      }
+    }
+
+    .ion {
+      font-family: "Lexend Exa", sans-serif;
+      color: #1c3b68;
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: -5px;
+    }
+    .academy {
+      color: white;
+      background: #ff4858;
+      /* 
+      padding: 0 10px 0 0;
+      font-weight: bold;    */
+    }
+  }
+  .admin-right {
+    width: 80%;
+    .bg-header {
+      background: linear-gradient(to right, #07103f, rgb(28, 3, 117));
+      width: 100%;
+      height: 100%;
+    } 
+    .header {
+      width: 95%;
+      margin: 0 auto;
+      height: 150px;
+      padding: 35px 0;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .search-admin {
+        display: flex;
+        .search-admin-user {
+          border-radius: 2rem;
+          border: 2px solid hsla(0, 0%, 100%, 0.6);
+          background-color: transparent;
+          padding: 7px 10px;
+          margin-right: 12px;
+          input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            &::placeholder {
+              color: #c7c2f4;
+            }
+          }
+          .icon-search {
+            color: #c7c2f4;
+          }
+        }
+        .headerUser {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          .avatarUser {
+            width: 35px;
+            height: 35px;
+            overflow: hidden;
+            border-radius: 50%;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+          .username {
+            color: white;
+            font-weight: bold;
+            margin-left: 5px;
+            margin-right: 5px;
+            letter-spacing: 1.5px;
+          }
+          .fas {
+            color: white;
+          }
+        }
+      }
+    }
+    .intro {
+      width: 92%;
+      margin: 0 auto;
+      height: 130px;
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 18px;
+        .param {
+          background: white;
+          border-radius: 7px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+            &.icon-course {
+              background: #f5365c;
+            }
+            &.icon-user {
+              background: green;
+            }
+            &.icon-lecturers {
+              background: rgb(255, 214, 0);
+            }
+            &.icon-year {
+              background: #11cdef;
+            }
+            i {
+              color: white;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    .recent {
+      background: white;
+      width: 67%;
+      margin-top: 30px;
+      border-radius: 7px;
+      height: 400px;
+      overflow-x: hidden;
+      padding: 10px;
+      color: #19224d !important; 
+      .table {
+        margin-bottom: 0;
+        width: 100%;
+        th {
+          color: #19224d;
+          border: 2px solid #19224d;
+          text-align: center;
+          text-align: center;
+        }
+        td {
+          color: #19224d;
+          border: 2px solid #19224d;
+          text-align: center;
+        }
+      }
+      &.recent-course {
+        background: white;
+        width: 31%;
+        margin-left: 2%;
+      }
+    }
+    .bg-header-2 {
+      background: #19224d !important;
+      height: 100%;
+    }
+  }
+}
+.cardAdmin {
+  cursor: pointer;
+
+  transition: all 0.5s;
+  &:hover .hoverCardCourse {
+    left: -90%;
+  }
+  &:hover .divButton {
+    opacity: 1;
+  }
+  &:hover .btnCourse {
+    opacity: 1;
+  }
+  .hoverCardCourse {
+    position: absolute;
+    top: 0;
+    left: -390%;
+    width: 300%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.712);
+    transform: skewX(45deg);
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  .divButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .btnCourse {
+    opacity: 0;
+    transition: all 0.5s;
+    font-size: 12px;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    margin: 3px 0;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &.chinhSuaKhoaHoc {
+      background: #e68c43;
+    }
+    &.xoaKhoaHoc {
+      background: #379470;
+    }
+    &.hocVienKhoaHoc {
+      background: #f94d5d;
+    }
+    &.hocVienChoXetDuyet {
+      background: #4970b3;
+    }
+    &.ghiDanhKhoaHoc{
+      background: #7F0383;
+    }
+    &.thongbao{
+      background: #52BEAE;
+    }
+    &.baiTap{
+      background:linear-gradient(to right,#4970b3,#379470);
+      color: white;
+    }
+    &.baiHoc{
+      background:linear-gradient(to right,#f94d5d,#379470);
+      color: white;
+    }
+    
+  }
+}
+#standard-name {
+  color: #19224d !important;
+}
+.MuiInput-underline:after {
+  border-color: #19224d !important;
+}
+.MuiInput-underline {
+  border-color: #19224d !important;
+}
+.MuiFormLabel-filled {
+  color: #19224d !important;
+}
+.MuiInput-underline:before {
+  border-bottom: 1.5px solid #19224d !important;
+}
+.MuiInputLabel-animated {
+  color: #19224d !important;
+}
+.btnChapNhanChinhSuaKhoaHoc {
+  &:focus {
+    box-shadow: none;
+  }
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 630px;
+    margin: 1.75rem auto;
+  }
+  tr{
+    border: 1px solid white;
+  }
+  th{
+    border: 1px solid white;
+  }
+  td{
+    border: 1px solid white;
+  }
+}
+.btnSettingCourse{
+  border: none;
+  color: white;
+  border-radius: 5px;
+  &.huyHieu{ 
+    background: #52BEAE;
+  }
+  &.choXetDuyet{
+    background: #4970b3;
+  }
+  &.daGhiDanh{
+    background: #f94d5d;
+  }
+  &.chinhSua{
+    background: #e68c43;
+  }
+  &.xoa{
+    background: #379470;
+  }
+}
+th{
+  text-align: center;
+}
+td{
+  text-align: center; 
+} 
+.huy-hieu-hien-co{
+  .divHuyHieu{ 
+    transition: all .5s;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0 5px; 
+    &:hover:after{
+      transform: scale(1.1);
+      content: 'x';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;  
+      width: 100%;
+      border-radius: 50%;
+      transition: all .5s;
+      height: 100%; 
+      transform: translate(-50%,-50%);
+      background: rgba(0, 0, 0, 0.459);
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    
+  }   
+}

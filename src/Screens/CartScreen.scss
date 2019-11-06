@@ -1,0 +1,166 @@
+.cart-screen {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 50px;
+  .title {
+    background: #19224d;
+    padding: 10px 0;
+    margin-top: 15px;
+    color: white;
+    padding-right: 80px;
+    text-align: right;
+    letter-spacing: 2px;
+  }
+  .container {
+      margin-bottom: 20px;  
+    .container-cart {
+        display: flex;
+      margin-top: 25px;
+      .left {
+          width: 69%;
+          margin-right: 1%;
+        table {
+          thead {
+            background: #19224d;
+            color: white;
+            th {
+              text-align: left;
+              border: none;
+              font-size: 20px;
+              letter-spacing: 2px;
+            }
+          }
+          tbody {
+            tr {
+                border-bottom: 2px solid #19224d;
+                position: relative;
+            }
+            p {
+              font-weight: bold;
+              text-align: left;
+              margin-top: 10px;
+              color: #19224d;
+              font-size: 25px;
+              margin-left: 10px;
+              &.remove{
+                  color: #ec5252 !important;
+                  font-size: 10px !important;
+                  cursor: pointer;
+                  text-align: right !important;
+              }
+            }
+            h2 {
+              text-align: right;
+              color: #ec5252;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .right{
+        background: #19224d;
+        padding:25px 15px;
+        color: white;
+        height: 100%;
+        width: 30%;
+        h4 {
+          border-bottom: 1px solid white;
+          padding-bottom: 6px;
+        }
+        hr { display: block; height: 1px;
+            border: 0; border-top: 1px solid #ccc;
+            margin: 1em 0; padding: 0; }
+            .total{
+                font-weight: bold;
+                color: #ec5252 !important;
+                font-size: 25px !important;
+                letter-spacing: 2px;
+            }
+            button{
+                background: #ec5252;
+                color: white;
+                font-weight: bold;
+                width: 100%;
+            }
+      }
+    }
+  }
+}
+
+
+.buyNow{
+  table {
+    thead {
+      background: #19224d;
+      color: white;
+      th {
+        text-align: left;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+    }
+    tbody {
+      tr {
+          border-bottom: 2px solid #19224d;
+          position: relative;
+      }
+      p {
+        font-weight: bold;
+        text-align: left;
+        margin-top: 10px;
+        color: #19224d;
+        font-size: 25px;
+        margin-left: 10px;
+        padding: 0 !important;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        width: 200px;
+        &:nth-of-type(2){
+          margin-top: 0;
+          font-size: 13px !important;
+        }
+        &.remove{
+            color: #ec5252 !important;
+            font-size: 10px !important;
+            cursor: pointer;
+            text-align: right !important;
+        }
+      }
+      h2 {
+        text-align: right;
+        color: #ec5252;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.right1{
+  background: #19224d;
+  padding:15px;
+  color: white;
+  height: 100%; 
+  width: 100%;
+  p{
+    padding: 0 !important; 
+  }
+  h4 {
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+  } 
+      .total{
+          font-weight: bold;
+          color: #ec5252 !important;
+          font-size: 25px !important;
+          letter-spacing: 2px;
+      }
+      button{
+          background: #ec5252;
+          color: white;
+          font-weight: bold;
+          width: 100%;
+      }
+}

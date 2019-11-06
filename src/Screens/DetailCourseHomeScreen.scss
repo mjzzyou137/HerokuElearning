@@ -1,0 +1,115 @@
+.detail-course-home-screen {
+  width: 100%;
+  padding-top: 50px;
+  color: #19224d;
+  .banner-detail {
+    width: 100%;
+    height: 400px;
+    margin: 1rem 0;
+    background: #19224d;
+    position: relative;
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(20%, -50%);
+      color: white;
+      z-index: 5;
+      text-shadow: 1px 1px 15px white;
+      h2 {
+        text-transform: uppercase;
+        font-size: 45px;
+        letter-spacing: 5px;
+      }
+    }
+  }
+  .container {
+    margin-bottom: 1rem;
+    .container-detail { 
+      width: 100%;
+      height: 100%;
+      display: flex;
+      .left {
+        width: 75%;
+        padding: 10px 0;
+        .content {
+          border: 1px solid rgba(128, 128, 128, 0.534);
+          padding: 10px;
+        }
+      }
+      .right {
+        width: 29%;
+        margin: 0 0.5%;
+        z-index: 10;
+        padding: 10px;
+        margin-top: -370px;
+        .content-2 {
+          border: 1px solid rgba(128, 128, 128, 0.534);
+          background: white;
+          .img {
+            width: 95%;
+            height: 95%;
+            margin: 2.5% auto;
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+            }
+          }
+          .feed-back {
+            width: 100%;
+            padding: 5px;
+            h5 {
+              font-size: 20px;
+              font-weight: bold;
+              letter-spacing: 2px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .content {
+          border: 1px solid rgba(128, 128, 128, 0.534);
+          background: white;
+          .avatar-course {
+            width: 98%; 
+            height: 156px;
+            margin: 1% auto;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .detail {
+            padding: 20px 10px;
+            h3 {
+              font-size: 40px;
+              letter-spacing: 5px;
+            }
+            button {
+              width: 100%;
+              margin-bottom: 5px;
+              padding: 15px;
+              font-size: 14px;
+              font-weight: bold;
+              &:focus {
+                outline: none;
+              }
+              &.add-to-cart {
+                margin-top: 10px;
+                background: #19224d;
+                color: white;
+                border: none;
+              }
+              &.buy-now {
+                background: transparent;
+                font-weight: bold;
+                color: #19224d;
+                border: 1px solid #19224d;
+              }
+            }
+          }
+        }
+      }
+    } 
+  }
+}

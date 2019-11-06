@@ -1,0 +1,253 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex; }
+  .home .left {
+    width: 50%;
+    height: 100%;
+    background: #f4f6f9;
+    position: relative;
+    overflow: hidden; }
+    .home .left .login {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 60%;
+      height: 76%;
+      transform: translate(0%, -50%);
+      box-shadow: 0px 0px 100px black;
+      background: #f4f6f9;
+      font-family: "Lexend Exa", sans-serif; }
+      .home .left .login .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 100%;
+        text-align: center; }
+        .home .left .login .content .logo {
+          padding: 20px 0; }
+          .home .left .login .content .logo .blue {
+            background: #1c3b68;
+            font-size: 35px !important; 
+            color: white;
+            font-weight: bold;
+            height: 52px;
+            padding-left: 10px; 
+            display: inline-block; 
+          }
+            .home .left .login .content .logo .blue p {
+              margin-bottom: 0;
+              font-family: "Lexend Exa", sans-serif;
+              letter-spacing: 2px;   
+            }
+          .home .left .login .content .logo .ion {
+            font-family: "Lexend Exa", sans-serif;
+            color: #1c3b68;
+            font-weight: bold;
+            font-size: 35px;
+            margin-left: 0px;  
+          }
+          .home .left .login .content .logo .academy {
+            color: white;
+            background: #ff4858; 
+            /* 
+            padding: 0 10px 0 0;
+            font-weight: bold;    */
+           }
+        .home .left .login .content form {
+          background: white;
+          padding: 30px 25px;
+          border: 1px solid #dddddd;
+          border-radius: 3px; }
+          .home .left .login .content form label {
+            text-align: left;
+            display: block;
+            margin-bottom: 4px !important; }
+          .home .left .login .content form button {
+            background: #ff4858;
+            font-family: "Lexend Exa", sans-serif;
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 7px;
+            background: linear-gradient(45deg, #ff4858, #1c3b68); }
+          .home .left .login .content form .form-group {
+            margin-bottom: 5px !important; }
+          .home .left .login .content form .signUpUsing {
+            padding: 20px 0;
+            margin-bottom: 0 !important; }
+          .home .left .login .content form .social {
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px; }
+            .home .left .login .content form .social .containerSocial {
+              display: flex; }
+              .home .left .login .content form .social .containerSocial .circle {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                color: white;
+                line-height: 35px;
+                margin: 0px 5px;
+                cursor: pointer; }
+                .home .left .login .content form .social .containerSocial .circle.facebook {
+                  background: #415993; }
+                .home .left .login .content form .social .containerSocial .circle.twitter {
+                  background: #4e9fe9; }
+                .home .left .login .content form .social .containerSocial .circle.google {
+                  background: #d5503f; }
+  .home .right {
+    width: 50%;
+    height: 100%;
+    background: #1c3b68;
+    position: relative;
+    overflow: hidden; }
+    .home .right .introduce {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 60%;
+      height: 76%;
+      transform: translate(0%, -50%);
+      box-shadow: 0px 0px 100px black;
+      background: url("https://parallax-test-2.imgix.net/uploads/download/20180815142019_Parallax_Office_May2018%206.jpg?auto=format%2Ccompress&w=1700&h=1117&ixlib=imgixjs-3.0.4");
+      color: white;
+      background-size: cover;
+      background-position: center; }
+      .home .right .introduce::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background: rgba(28, 58, 104, 0.74); }
+      .home .right .introduce .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        letter-spacing: 2px;
+        z-index: 100;
+        text-shadow: 1px 1px 15px white; }
+        .home .right .introduce .content h4 {
+          padding: 10px 0;
+          border-bottom: 1px solid white;
+          display: inline-block; }
+          .home .right .introduce .content h4 span {
+            font-size: 27px;
+            font-weight: bold; }
+        .home .right .introduce .content button {
+          color: white;
+          border: 1px solid white;
+          background: transparent;
+          letter-spacing: 1.5px; }
+          .home .right .introduce .content button:hover {
+            background: #10233f; }
+
+.bgUser {
+  position: relative;
+  width: 100%;
+  background: #3f4980;
+  padding: 50px 0; }
+
+.bgCourse {
+  background: #3f4980;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .bgCourse .layout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    margin: 0 auto; }
+    .bgCourse .layout .course {
+      display: flex; }
+      .bgCourse .layout .course .left {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        justify-content: center;
+        background: #202642;
+        width: 30%; }
+        .bgCourse .layout .course .left .top {
+          width: 100%; }
+          .bgCourse .layout .course .left .top p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white; }
+          .bgCourse .layout .course .left .top .avatar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; }
+            .bgCourse .layout .course .left .top .avatar img {
+              width: 70%;
+              border: 2px solid white;
+              overflow: hidden;
+              border-radius: 50%;
+              height: 100%; }
+        .bgCourse .layout .course .left .bottom {
+          margin-top: 10px;
+          background: #3f4980;
+          display: flex;
+          flex-direction: column;
+          padding: 10px 0; }
+          .bgCourse .layout .course .left .bottom span {
+            text-align: center;
+            display: block;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer; }
+            .bgCourse .layout .course .left .bottom span:hover {
+              background: #202642; }
+      .bgCourse .layout .course .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        background: #202642;
+        margin-right: -20px;
+        width: 60%;
+        margin-left: 2%;
+        width: 68%; }
+        .bgCourse .layout .course .right h1 {
+          text-align: center;
+          text-shadow: 1px 1px 15px white; }
+p{
+  color: unset !important;
+  font-size:  unset !important;
+  line-height: unset !important;
+}
+
+.login-facebook{
+    width: 35px !important;
+                height: 35px !important;
+                border-radius: 50% !important;
+                color: white !important;
+                line-height: 35px !important;
+                margin: 0px 5px !important;
+                cursor: pointer !important;
+                border:none !important;
+                background:#4267B2 !important;
+                postion:relative;
+}
+.login-facebook::after{
+  content:'\f39e';
+  font-family: "Font Awesome 5 Brands";
+  postion:absolute;
+  top:50%;
+  left:50%;
+}
+/*# sourceMappingURL=style.css.map */
